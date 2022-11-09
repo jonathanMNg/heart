@@ -16,7 +16,7 @@ class Particle {
     let noiseFactor = 0.1 * size;
     let xc = Math.cos(this.angle);
     let yc = Math.sin(this.angle);
-    let n = simplex.noise3D(xc / zoom, yc / zoom, now / 1500 + this.offset) * noiseFactor;
+    let n = simplex.noise3D(xc / zoom, yc / zoom, now / 1400 + this.offset) * noiseFactor;
     let r = size + n;
     this.x = r * 16 * Math.pow(Math.sin(this.angle), 3);
     this.y = -r * (13 * Math.cos(this.angle) - 5 * Math.cos(2 * this.angle) - 2 * Math.cos(3 * this.angle) - Math.cos(4 * this.angle));

@@ -1,16 +1,26 @@
 body, html {
+  align-content: center;
+  alignment: center;
+  align-items: center;
   margin: 0;
     background-color: black;
 }
-
+#audio_playo24 {
+  z-index: 999;
+}
 canvas {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
     background-color: black;
 }
 #canvas {
-  height: 100%;
+
   margin-left: auto;
   animation: 1.5s ease 0s infinite beat;
+  height: 80%;
 }
 
 @keyframes beat {
