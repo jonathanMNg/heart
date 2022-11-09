@@ -1,0 +1,24 @@
+body, html {
+  margin: 0;
+    background-color: black;
+}
+
+canvas {
+  display: block;
+    background-color: black;
+}
+#canvas {
+  height: 100%;
+  margin-left: auto;
+  animation: 1.5s ease 0s infinite beat;
+}
+
+@keyframes beat {
+  0%, 50%, 100% { transform: scale(1, 1); }
+  30%, 80% { transform: scale(0.92, 0.95); }
+}
+
+@keyframes pulse {
+  0%, 50%, 100% {  background: #fee; }
+  30%, 80% { background: #fff; }
+}
