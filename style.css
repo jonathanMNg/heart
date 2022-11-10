@@ -1,33 +1,57 @@
-body, html {
-  align-content: center;
-  alignment: center;
-  align-items: center;
+html, body {
+  height: 100%;
+  padding: 0;
   margin: 0;
-    background-color: black;
-}
-#audio_playo24 {
-  z-index: 999;
+  background: #000;
 }
 canvas {
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-    background-color: black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
-#canvas {
-
+#pinkboard {
+  height: 100%;
   margin-left: auto;
-  animation: 1.5s ease 0s infinite beat;
-  height: 80%;
+  animation: 1.5s ease 1.5s infinite beat;
+  background-color: transparent;
 }
-
+#pinkboard2 {
+  height: 100%;
+  margin-left: auto;
+  background-color: transparent;
+  animation: 1.5s ease 1.5s infinite beat2;
+  transform: scale(0.8);
+}
+#pinkboard4 {
+  height: 100%;
+  margin-left: auto;
+  background-color: transparent;
+  animation: 1.5s ease 1.5s infinite beat4;
+  transform: scale(0.75);
+}
+#pinkboard3 {
+  height: 100%;
+  margin-left: auto;
+  background-color: transparent;
+  transform: scale(0.95);
+}
 @keyframes beat {
-  0%, 50%, 100% { transform: scale(1, 1); }
-  30%, 80% { transform: scale(0.92, 0.95); }
+  0%, 50%, 100% { transform: scale(0.9, 0.9); }
+  30%, 80% { transform: scale(0.8, 0.8); }
+}
+@keyframes beat2 {
+  0%, 50%, 100% { transform: scale(0.8, 0.8); }
+  30%, 80% { transform: scale(0.7, 0.7); }
 }
 
+@keyframes beat4 {
+  0%, 50%, 100% { transform: scale(0.65, 0.65); }
+  30%, 80% { transform: scale(0.6, 0.6); }
+}
+@keyframes beat3 {
+  0%, 50%, 100% { transform: scale(0.95, 0.95); }
+  30%, 80% { transform: scale(0.9, 0.9); }
+}
 @keyframes pulse {
   0%, 50%, 100% {  background: #fee; }
   30%, 80% { background: #fff; }
